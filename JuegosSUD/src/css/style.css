@@ -1,0 +1,101 @@
+.row {
+  margin: 0;
+}
+
+/* Compiled coding for cards */
+.cs-cards figure,
+.cs-cards figure > figcaption {
+  background-color: white;
+  color: black;
+} /* sets default colors and bg */
+.cs-cards figure > figcaption > h1,
+.cs-cards figure > figcaption > h2,
+.cs-cards figure > figcaption > h3,
+.cs-cards figure > figcaption > h4,
+.cs-cards figure > figcaption > h5 {
+  color: black;
+} /* sets default colour for headings */
+.cs-cards figure.card {
+  margin: 0;
+} /* remove bootstrap card margin */
+.cs-cards figure {
+  width: 250px;
+  height: 250px;
+} /* set max size of team cards */
+.cs-cards .expander {
+  /* upward arrow to suggest interactivity */
+  width: 100%;
+  text-align: right;
+  padding-right: 10px;
+  position: absolute;
+  bottom: 0;
+}
+.cs-cards .expander i {
+  min-height: 32px;
+  font-size: 24px;
+  color: black;
+  padding: 0 3px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-bottom: none;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-top-right-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-topright: 3px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.cs-cards img {
+  max-width: 100%;
+  height: auto;
+} /* sets image size to full container */
+.cs-cards figcaption a {
+  cursor: pointer;
+} /* restore link pointer */
+.cs-cards h3 {
+  color: inherit;
+  margin-bottom: 0;
+} /* set heading to inherit colour from parent */
+.cs-cards a.btn {
+  position: relative;
+} /* restores button to relativity*/
+.cs-cards a.btn,
+.cs-cards a.btn:hover {
+  color: #ffffff;
+} /* sets default and hover font colour of button */
+.cs-cards .imgbghover {
+  /* image inserted via javascript */
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  -webkit-filter: blur(10px) opacity(0.4);
+  filter: blur(10px) opacity(0.4);
+}
+.cs-modal-footer {
+  padding: 1rem !important; /* overrides row default padding */
+  border-top: 1px solid #e9ecef;
+}
+.cs-gallery figure {
+  width: auto;
+  height: auto;
+}
+
+ul.social-links {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+ul.social-links a {
+  color: rgb(96, 96, 96);
+} /* sets default colour which can be overridden in individual sections */
+ul.social-links.social-light a {
+  color: rgb(255, 255, 255);
+} /* sets lighter default colour */
+ul.social-links > li {
+  margin: 0;
+}
